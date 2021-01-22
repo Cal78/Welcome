@@ -25,7 +25,7 @@ public class Events implements Listener {
         if(!player.hasPlayedBefore()){
             for(Player all_players : Bukkit.getOnlinePlayers()){
                 all_players.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("접두사") + plugin.gold + player + plugin.white + "님이 서버에 처음 접속 했습니다."));
-                all_players.sendMessage("지금부터 " + plugin.getConfig().getInt("지연 초") + "초 동안 " + player + "님에게 인사하면 " + plugin.getConfig().getInt("지급 금액") + "원을 획득합니다!");
+                all_players.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("접두사") + "지금부터 " + plugin.getConfig().getInt("지연 초") + "초 동안 " + player + "님에게 인사하면 " + plugin.getConfig().getInt("지급 금액") + "원을 획득합니다!"));
                 plugin.welcome_list.add(all_players);
                 plugin.impossible_chat.add(player);
                 List<String> s = plugin.getConfig().getStringList("인사 메시지");
