@@ -1,0 +1,7 @@
+name: Welcome
+version: ${project.version}
+main: com.local.welcome.Welcome
+api-version: 1.16
+commands:
+  player_money:
+    permission: op.op
